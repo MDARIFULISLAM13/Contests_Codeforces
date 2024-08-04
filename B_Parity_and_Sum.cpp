@@ -41,7 +41,7 @@ void arif()
         cout << 0 << endl;
         return;
     }
-    int ans = 0;
+    ll ans = 0;
     sort(a.begin(), a.end());
     for (int i = 0; i < a.size(); i++)
     {
@@ -54,7 +54,9 @@ void arif()
         ans++;
         mx = max(mx, (mx + a[i]));
     }
-    cout << ans << endl;
+
+    ll ans2 = a.size() + 1;
+    cout << min(ans, ans2) << endl;
 }
 int main()
 {
